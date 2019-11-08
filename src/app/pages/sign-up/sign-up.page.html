@@ -1,0 +1,36 @@
+<ion-content id="sign-up">
+
+  <form class="sign-up-form" [formGroup]="signUpForm">
+    <ion-grid>
+      <ion-row justify-content-center>
+        <ion-col align-self-center>
+
+          <div text-center>
+            <h3>Create an account</h3>
+          </div>
+
+          <div padding>
+            <ion-item>
+              <ion-input name="firstName" type="text" placeholder="First name" formControlName="firstName"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="lastName" type="text" placeholder="Last name" formControlName="lastName"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="username" type="text" placeholder="Username" formControlName="username"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="password" type="password" placeholder="Password" formControlName="password"></ion-input>
+            </ion-item>
+          </div>
+
+          <div padding>
+            <ion-button class="btn-primary" size="medium" type="submit" expand="block" (click)="onSubmit()">Sign up</ion-button>
+          </div>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+
+</ion-content>

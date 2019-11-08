@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Alerts
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="alerts">
+
+  <ion-card class="card" *ngFor="let alert of alerts">
+    <ion-card-header class="card-header">
+      <ion-card-title class="card-title">{{alert.title}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{alert.description}}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

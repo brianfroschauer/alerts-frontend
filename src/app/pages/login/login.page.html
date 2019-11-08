@@ -1,0 +1,38 @@
+<ion-content id="login">
+
+  <form class="login-form" [formGroup]="loginForm">
+    <ion-grid>
+      <ion-row justify-content-center>
+        <ion-col align-self-center>
+
+          <div text-center>
+            <h3>Alerts</h3>
+          </div>
+
+          <div padding>
+            <ion-item>
+              <ion-input name="username" type="text" placeholder="Username" formControlName="username">
+              </ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="password" type="password" placeholder="Password" formControlName="password">
+              </ion-input>
+            </ion-item>
+          </div>
+
+          <div padding>
+            <ion-button class="btn-primary" size="medium" type="submit" expand="block" (click)="login()">Login</ion-button>
+          </div>
+
+          <div padding text-center>
+            <ion-text>
+              Don't have an account? <a routerLink='/sign-up'>Sign in</a>
+            </ion-text>
+          </div>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+
+</ion-content>

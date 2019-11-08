@@ -1,0 +1,20 @@
+@import "variables";
+
+.btn-primary {
+  --background: var(--color1) !important;
+  --border-radius: 22px !important;
+  --background-activated: var(--color2) !important;
+  font-weight: 600 !important;
+}
+
+.btn-secondary {
+
+}
+
+ion-menu-button {
+  color: var(--color1);
+}
+
+ion-tab-button {
+  --color-selected: var(--color1);
+}

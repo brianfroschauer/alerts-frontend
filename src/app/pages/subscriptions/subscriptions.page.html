@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Subscriptions
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="subscriptions">
+
+  <ion-card class="card" *ngFor="let subscription of subscriptions">
+    <ion-card-header class="card-header">
+      <ion-card-subtitle class="card-subtitle">Last update {{subscription.updatedDate | date : 'shortDate'}}</ion-card-subtitle>
+      <ion-card-title class="card-title">{{subscription.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{subscription.description}}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
